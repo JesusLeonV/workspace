@@ -1,0 +1,79 @@
+body {
+    background-color: beige;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.img-container {
+    margin: 20px 0;
+}
+
+.btn-regresar {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #795548;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.Login-container {
+    background-color: white;
+    width: 100%;        
+    max-width: 400px;    
+    border-radius: 12px; 
+    padding: 30px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+
+.Login-container input,
+.Login-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; 
+    font-size: 16px; 
+}
+
+.Login-container textarea {
+    height: 100px;
+    resize: none;
+}
+
+.Login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4c70af;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.Login-container button:hover {
+    background-color: #3b5998;
+}

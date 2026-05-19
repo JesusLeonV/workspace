@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/css.css">
+    <title>Videogames</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div>
+            <strong>Bienvenido, <%= nombreUsuario %></strong>
+        </div>
+        <div>
+            <% if (nombreUsuario === "Invitado") { %>
+                <a href="/login" class="btn-login">Iniciar Sesión</a>
+            <% } else { %>
+                <a href="/logout" class="btn-logout">Cerrar Sesión</a>
+            <% } %>
+        </div>
+    </nav>
+
+    <header class="main-header">
+        <h1>Zona gamer</h1>
+        <h3>Poseemos variedad de videojuegos, aquí encontrarás sus nombres y sus precios</h3>
+        <hr>
+    </header>
+
+    <main>
+        <p class="info-p">Aquí una tabla de los videojuegos con los que contamos, su disponibilidad y precio</p> 
+        
+        <table class="tabla-juegos"> 
+            <thead> 
+                <tr>
+                    <th>Portada</th>
+                    <th>Nombre</th>
+                    <th>Disponibilidad</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/img/minec.jpeg" alt="Minecraft" width="200"></td>
+                    <td>Minecraft</td>
+                    <td><span class="status disponible">disponible</span></td>
+                    <td>15.000$</td>
+                </tr>
+                <tr>
+                    <td><img src="/img/callof.webp" alt="Call of Duty" width="200"></td>
+                    <td>Call of Duty</td>
+                    <td><span class="status disponible">disponible</span></td>
+                    <td>66.000$</td>
+                </tr>
+                <tr>
+                    <td><img src="/img/god.jpeg" alt="God of War" width="200"></td>
+                    <td>God of War</td>
+                    <td><span class="status agotado">agotado</span></td>
+                    <td>45.000$</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section class="trailers-container">
+            <h3>Trailer Minecraft</h3>
+            <div class="video-wrapper">
+                <iframe class="video-frame" width="560" height="315" src="https://www.youtube.com/embed/3ntfjZGgm04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <h3>Trailer Call of Duty</h3>
+            <div class="video-wrapper">
+                <iframe class="video-frame" width="560" height="315" src="https://www.youtube.com/embed/PHy3xx5aqZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <h3>Trailer God Of War</h3>
+            <div class="video-wrapper">
+                <iframe class="video-frame" width="560" height="315" src="https://www.youtube.com/embed/EYIuLO-BzB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <hr>
+        <br>
+        <a href="/agradecimiento" class="btn-gracias">Dejar Opinión / Gracias</a>
+        <br><br>
+    </footer>
+
+</body>
+</html>

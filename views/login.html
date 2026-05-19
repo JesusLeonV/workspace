@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="/css/css.css">
+</head>
+<body class="login-body">
+
+    <div class="login-card">
+        <h2>Ingresar a la web</h2>
+        <form action="/procesar_login" method="POST">
+            <input type="email" name="email" placeholder="Tu correo" required class="input-form">
+            <input type="password" name="contrasena" placeholder="Tu contraseña" required class="input-form">
+            <button type="submit" class="btn-submit">Entrar</button>
+        </form>
+        <br>
+        <a href="/" style="color: #795548; text-decoration: none;">Volver al inicio</a>
+    </div>
+
+</body>
+</html>

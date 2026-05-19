@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/css2.css">
+    <title>Gracias</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Gracias por compartirnos tu opinión</h1> 
+        <h2>Valoramos tu ayuda con nosotros, hasta luego.</h2>
+        <div class="img-container">
+            <img src="/img/gatito.png" alt="Gatito saludando" width="200">
+        </div>
+        <br>
+        <a href="/" class="btn-regresar">Regresar al Inicio</a>
+    </header>
+
+    <main class="form-section">
+        <div class="Login-container">
+            <h2>Formulario de Contacto</h2>
+            <form action="/registrar" method="POST" class="formulario">
+                <label>Ingresa tu nombre</label>
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                
+                <label>Ingresa tu correo</label>
+                <input type="email" name="correo" placeholder="Correo" required>
+                
+                <label>Ingresa tu opinión</label>
+                <textarea class="asunto" name="asunto" placeholder="Escribe aquí tu reseña..." required></textarea>
+                
+                <button type="submit">Enviar Opinión</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        console.log("Página de agradecimiento cargada correctamente.");
+    </script>
+</body>
+</html>
